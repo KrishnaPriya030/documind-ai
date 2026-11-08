@@ -1,0 +1,41 @@
+services:
+  api:
+    build: .
+    command: uvicorn app.api:app --host 0.0.0.0 --port 8000
+    env_file:
+      - .env
+    environment:
+      DOCUMIND_DATA_DIR: /app/data
+      DOCUMIND_INDEX_DIR: /app/index
+      DOCUMIND_DB_PATH: /app/data/documind.sqlite3
+      HF_HOME: /app/model_cache
+    volumes:
+      - documind_data:/app/data
+      - documind_index:/app/index
+      - huggingface_cache:/app/model_cache
+    ports:
+      - "127.0.0.1:8001:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build: .
+    command: streamlit run frontend_streamlit_api.py --server.address 0.0.0.0 --server.port 8501
+    environment:
+      API_URL: http://api:8000
+      APP_ACCESS_PASSWORD: ${APP_ACCESS_PASSWORD:-}
+    ports:
+      - "127.0.0.1:8503:8501"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  documind_data:
+  documind_index:
+  huggingface_cache:

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "attendance_75_percent",
+    "question": "What is the minimum attendance required to appear for examinations?",
+    "answerable_from_handbook": true,
+    "expected_pages": [220],
+    "note": "The attendance rule states a 75% minimum."
+  },
+  {
+    "id": "registrar_email_fact_sheet",
+    "question": "What is the registrar's email address in the University Fact Sheet?",
+    "answerable_from_handbook": true,
+    "expected_pages": [21],
+    "note": "The Fact Sheet lists registrar@keralauniversity.ac.in and regrku@gmail.com."
+  },
+  {
+    "id": "naac_grade",
+    "question": "What is the NAAC accreditation grade of the University of Kerala?",
+    "answerable_from_handbook": true,
+    "expected_pages": [21, 11],
+    "note": "The Fact Sheet and accreditation section both describe the A grade."
+  },
+  {
+    "id": "school_count_conflict",
+    "question": "How many schools does the University of Kerala have?",
+    "answerable_from_handbook": true,
+    "expected_pages": [14, 21],
+    "note": "Both pages are required for the known nine-versus-eleven discrepancy."
+  },
+  {
+    "id": "department_count_fact_sheet",
+    "question": "How many departments are listed in the University Fact Sheet?",
+    "answerable_from_handbook": true,
+    "expected_pages": [21],
+    "note": "The Fact Sheet lists 43 departments."
+  },
+  {
+    "id": "science_technology_departments",
+    "question": "How many departments are in Science and Technology?",
+    "answerable_from_handbook": true,
+    "expected_pages": [21],
+    "note": "The Fact Sheet gives the Science and Technology department count."
+  },
+  {
+    "id": "university_act",
+    "question": "Under which Act does the University of Kerala exist?",
+    "answerable_from_handbook": true,
+    "expected_pages": [11],
+    "note": "The accreditation/profile section mentions the Kerala University Act (Act 17 of 1974)."
+  },
+  {
+    "id": "apple_stock_price",
+    "question": "What is Apple's current stock price?",
+    "answerable_from_handbook": false,
+    "expected_pages": [],
+    "note": "Current market price is not established by this handbook. Retrieval may still return irrelevant passages."
+  },
+  {
+    "id": "varkala_weather_today",
+    "question": "What is the weather in Varkala today?",
+    "answerable_from_handbook": false,
+    "expected_pages": [],
+    "note": "The handbook's description of Varkala does not provide today's weather."
+  },
+  {
+    "id": "latest_academy_award",
+    "question": "Who won the latest Academy Award for Best Actor?",
+    "answerable_from_handbook": false,
+    "expected_pages": [],
+    "note": "A current entertainment result is not established by this handbook."
+  },
+  {
+    "id": "guaranteed_placement_package",
+    "question": "What guaranteed placement package will every student receive in 2027?",
+    "answerable_from_handbook": false,
+    "expected_pages": [],
+    "note": "The handbook does not establish a guaranteed future package for every student."
+  }
+]

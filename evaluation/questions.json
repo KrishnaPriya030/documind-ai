@@ -1,0 +1,17 @@
+[
+  {"question": "In what year was the University of Kerala founded?", "answerable": true, "acceptable_pages": [5, 12], "category": "factual"},
+  {"question": "What is the University's rank among Indian universities mentioned in the handbook?", "answerable": true, "acceptable_pages": [11], "category": "factual"},
+  {"question": "Which Kerala University Act governs the University of Kerala?", "answerable": true, "acceptable_pages": [11, 20], "category": "factual"},
+  {"question": "Which sections of the UGC Act recognize the University of Kerala?", "answerable": true, "acceptable_pages": [11, 20], "category": "factual"},
+  {"question": "What NAAC grade and GPA did the University receive, according to the handbook?", "answerable": true, "acceptable_pages": [11, 21], "category": "factual"},
+  {"question": "How many schools does the University of Kerala have?", "answerable": true, "acceptable_pages": [14, 21], "require_all": true, "category": "conflict"},
+  {"question": "How many departments are there in the University?", "answerable": true, "acceptable_pages": [21], "category": "factual"},
+  {"question": "How many departments belong to Science and Technology?", "answerable": true, "acceptable_pages": [21], "category": "factual"},
+  {"question": "How are the University's 43 departments distributed across Social Sciences and Arts and Humanities?", "answerable": true, "acceptable_pages": [21], "category": "factual"},
+  {"question": "What registrar email addresses are listed in the University fact sheet?", "answerable": true, "acceptable_pages": [21], "category": "exact_string"},
+  {"question": "According to the handbook, must every postgraduate student attend exactly 97% of classes?", "answerable": true, "acceptable_pages": [220, 221], "category": "false_premise"},
+  {"question": "What is Apple's current stock price?", "answerable": false, "category": "off_topic"},
+  {"question": "What will the weather be in Varkala tomorrow?", "answerable": false, "category": "off_topic"},
+  {"question": "Who won the latest Academy Award for Best Actor?", "answerable": false, "category": "off_topic"},
+  {"question": "What is the University's guaranteed placement package for 2027?", "answerable": false, "category": "near_miss"}
+]
